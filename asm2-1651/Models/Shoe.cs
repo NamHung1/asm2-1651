@@ -8,13 +8,14 @@ namespace asm2_1651.Models
 {
     public class Sneaker : Shoe
     {
+        public Sneaker() { }
         public Sneaker(bool lace, string sole, bool elastic, string upper, string color)
         {
-            Lace = lace;
-            Sole = sole;
-            Elastic = elastic;
-            Upper = upper;
-            Color = color;
+            base.Lace = lace;
+            base.Sole = sole;
+            base.Elastic = elastic;
+            base.Upper = upper;
+            base.Color = color;
         }
     }
 

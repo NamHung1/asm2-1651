@@ -6,7 +6,7 @@ namespace asm2_1651
 {
     class Program
     {
-        static List<Shoe> shoes = new List<Shoe>();
+        public static List<Shoe> shoes = new List<Shoe>();
         static List<Customer> customers = new List<Customer>();
         static void Main(string[] args)
         {
@@ -86,8 +86,9 @@ namespace asm2_1651
                         builder = new SneakerBuilder();
                         shoe = new Shoe();
                         builder.Build(shoe);
-                        shoes.Add(shoe);
-                        Console.WriteLine("Sneaker created successfully!");
+                        // shoes.Add(shoe);
+                        // Console.WriteLine(shoe.ToString());
+                        // Console.WriteLine("Sneaker created successfully!");
                         Console.ReadKey();
                         Console.Clear();
                         break;
