@@ -32,8 +32,9 @@ namespace asm2_1651.Builder
             Console.WriteLine("Set Color: ");
             string color = Console.ReadLine();
 
-            Sneaker sn = new Sneaker(lace, sole, elastic, upper, color);
-            shoe = sn;
+            shoe = new Sneaker(){ Lace = lace, Sole = sole, Elastic = elastic, Upper = upper, Color = color };
+            Console.WriteLine(shoe.ToString());
+            Program.shoes.Add(shoe);
         }
     }
     public class LoaferBuilder : ShoeBuilder
